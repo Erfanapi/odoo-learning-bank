@@ -1,0 +1,18 @@
+{
+  "name": "Odoo 17 Development",
+  "image": "odoo:17.0",
+  "forwardPorts": [8069],
+  "postCreateCommand": "pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "redhat.vscode-xml",
+        "oderwat.indent-rainbow"
+      ]
+    }
+  },
+  "containerEnv": {
+    "ODOO_VERSION": "17.0"
+  }
+}
